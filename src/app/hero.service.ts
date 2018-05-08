@@ -9,7 +9,7 @@ import { Observable, of } from 'rxjs';
 })
 export class HeroService {
 
-  constructor() { }
+  constructor(private messageService: MessageService) { }
 
 
 getHeroes(): Observable<Hero[]>{
