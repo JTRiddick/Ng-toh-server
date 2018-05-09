@@ -1,15 +1,28 @@
-
 {
-  "heroes": [
-    { "id": 11, "name": "Porpentine" },
-    { "id": 12, "name": "Nadezhda the Night Witch" },
-    { "id": 13, "name": "FF Woodycooks" },
-    { "id": 14, "name": "Ol' Kentucky Shark" },
-    { "id": 15, "name": "Chester" },
-    { "id": 16, "name": "Lady Jane" },
-    { "id": 17, "name": "Wigglesmith" },
-    { "id": 18, "name": "Chalice" },
-    { "id": 19, "name": "Merghen Berghen" },
-    { "id": 20, "name": "I.K. Brunel" }
+  "API": [
+    {
+      "name": "Porpentine",
+      "id": 1
+    },
+    {
+      "name": "F.F. Woodycooks",
+      "id": 2
+    },
+    {
+      "name": "Nadezhda the Night Witch",
+      "id": 3
+    },
+    {
+      "name": "Ol' Kentucky Shark",
+      "id": 4
+    },
+    {
+      "name": "Lady Jane Franklin",
+      "id": 5
+    },
+    {
+      "name": "die Rotschwein",
+      "id": 6
+    }
   ]
 }

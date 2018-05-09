@@ -6,10 +6,14 @@ import { catchError, map, tap } from 'rxjs/operators';
 import { MessageService } from './message.service'
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { environment } from '../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 };
+
+//angular rxjs api service backend
+const API_URL = environment.apiUrl;
 
 
 @Injectable({
@@ -38,8 +42,8 @@ const httpOptions = {
     private log(message: string) {
       this.messageService.add('HeroService: ' + message);
     }
-    private heroesUrl = 'api/heroes';  // URL to web api
-
+    // private heroesUrl = 'api/heroes';  // URL to web api
+       private heroesUrl = `${API_URL}`
 
   getHeroes (): Observable<Hero[]> {
     return this.http.get<Hero[]>(this.heroesUrl)

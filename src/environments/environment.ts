@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+
+  // URL for development JSON Server API
+  // apiUrl: 'http://localhost:3000'
+  apiUrl: 'http://erebus.dhcp.swmed.org:3000/API'
 };
 
 /*
